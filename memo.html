@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyun Tanıtım Sayfası</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('Untitled-1111.png') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        .container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #f39c12;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            nav .menu {
+                display: block;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Oyun Adı</div>
+        <div class="menu">
+            <a href="#home">Anasayfa</a>
+            <a href="#features">Özellikler</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#contact">İletişim</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="content">
+            <h2>Anasayfa</h2>
+            <p>Bu bölüm, oyunun kısa tanıtımını içerecek.</p>
+            <img src="path-to-your-image.jpg" alt="Oyun Görseli">
+        </section>
+
+        <section id="features" class="content">
+            <h2>Özellikler</h2>
+            <p>Oyunun özelliklerini ve önemli detaylarını burada vurgulayabilirsiniz.</p>
+        </section>
+
+        <section id="gallery" class="content">
+            <h2>Galeri</h2>
+            <p>Oyun ile ilgili ekran görüntüleri ve grafikler burada sergilenecek.</p>
+            <img src="path-to-your-image.jpg" alt="Galeri Görseli">
+        </section>
+
+        <section id="contact" class="content">
+            <h2>İletişim</h2>
+            <p>İletişim bilgileri veya bir iletişim formu eklenebilir.</p>
+        </section>
+    </div>
+</body>
+</html>
